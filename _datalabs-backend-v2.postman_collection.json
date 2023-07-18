@@ -1,0 +1,2602 @@
+{
+	"info": {
+		"_postman_id": "311b1147-c5bc-4cbd-a479-ee3b48fd9945",
+		"name": "_datalabs-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18600408"
+	},
+	"item": [
+		{
+			"name": "channel-details",
+			"item": [
+				{
+					"name": "channel-info/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/channel-info/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/channel-info/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/channel-info/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/channel-info/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/channel-info/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/channel-info/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "channel-info/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/channel-info/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"channel-info",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "database-info",
+			"item": [
+				{
+					"name": "database-info/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"lakehouse\",\n        \"description\": \"us_lakehouse\",\n        \"bufferTableName\": \"view_final_lakehouse\",\n        \"rawTableName\": \"view_final_lakehouse\",\n        \"primaryKey\": \"email_address\",\n        \"type\": \"view\",\n        \"useFor\": \"export\",\n        \"location\": \"64622861839f3ba4b522167d\",\n        \"remark\": \"lakehouse view\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"64677473736c5ed2d7ae1d24\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {},\n  \"options\": {\n    \"page\": 0,\n    \"limit\": 0,\n    \"pagination\": false,\n    \"options\": {}\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/database-info/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"lakehouse\",\n        \"description\": \"us_lakehouse\",\n        \"bufferTableName\": \"view_final_lakehouse\",\n        \"rawTableName\": \"view_final_lakehouse\",\n        \"primaryKey\": \"email_address\",\n        \"type\": \"view\",\n        \"useFor\": \"export\",\n        \"location\": \"646704e87b2535953d6cd47c\",\n        \"remark\": \"lakehouse view\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/update/6467066988a6845e0be030c8",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"update",
+								"6467066988a6845e0be030c8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "database-info/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"delete by sanjay test\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/database-info/delete/6465cd0b7e0a26340baba7f9",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"database-info",
+								"delete",
+								"6465cd0b7e0a26340baba7f9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-channel-management",
+			"item": [
+				{
+					"name": "export/channel-management/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/channel-management/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/channel-management/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"channel-management",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-dest-owner",
+			"item": [
+				{
+					"name": "export/dest-owner/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"\",\n        \"apiUrl\": \"\",\n        \"apiHeaders\": \"\",\n        \"destDataFields\": \"\",\n        \"description\": \"\",\n        \"remark\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"\",\n        \"apiUrl\": \"\",\n        \"apiHeaders\": \"\",\n        \"destDataFields\": \"\",\n        \"description\": \"\",\n        \"remark\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-owner/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-owner/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-owner",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-dest-source",
+			"item": [
+				{
+					"name": "export/dest-source/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/dest-source/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"dest-source",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-feed-execution-management",
+			"item": [
+				{
+					"name": "export/feed-execution-management/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/feed-execution-management/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/feed-execution-management/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/feed-execution-management/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/feed-execution-management/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/feed-execution-management/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/dest-source/delete Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/feed-execution-management/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"feed-execution-management",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-source-configuration",
+			"item": [
+				{
+					"name": "export/source-configuration/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-configuration/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-configuration/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-configuration",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-source-owner-management",
+			"item": [
+				{
+					"name": "export/source-owner-management/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner-management/soft-delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner-management/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner-management",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "export-source-owner",
+			"item": [
+				{
+					"name": "export/source-owner/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25412,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "export/source-owner/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/export/source-owner/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"export",
+								"source-owner",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "import-data-sources",
+			"item": [
+				{
+					"name": "import/data-source/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"ongage1\",\n        \"sourceId\": \"66905\",\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": true,\n        \"category\": \"gold\",\n        \"trustFactor\": 1,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"remark\": \"vortals\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646479569f60a01feba6472c\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {},\n  \"options\": {\n    \"page\": 0,\n    \"limit\": 0,\n    \"pagination\": false,\n    \"options\": {}\n  }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/headers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {},\n  \"options\": {\n    \"page\": 7,\n    \"limit\": 10,\n    \"pagination\": true,\n    \"options\": {}\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/headers",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"headers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"abhishek\",\n        \"sourceId\": 25413,\n        \"ownerId\": \"646224f8f86c6a3b88cc0d78\",\n        \"location\": \"646224f8f86c6a3b88cc0d7a\",\n        \"dbName\": \"646224f8f86c6a3b88cc0d7b\",\n        \"connectToLakehouse\": 557,\n        \"category\": \"gold\",\n        \"trustFactor\": 358,\n        \"dupeReject\": 427,\n        \"dupeCheck\": true,\n        \"badCheck\": true,\n        \"emailVerification\": true,\n        \"createdBy\": \"Gorgeous\",\n        \"remark\": \"vortals\",\n        \"isActive\": true\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/update/646479a49f60a01feba64742",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"update",
+								"646479a49f60a01feba64742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/data-source/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/data-source/delete/646479569f60a01feba6472c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"data-source",
+								"delete",
+								"646479569f60a01feba6472c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "import-source-owner",
+			"item": [
+				{
+					"name": "import/source-owner/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"veeru bhai\",\n        \"remark\": \"create new owner\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/find-one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"64673451425bcdb359dfaa90\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"testing1234\",\n        \"remark\": \"create new owner\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/update/646739849714a66ff08c5da5",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"update",
+								"646739849714a66ff08c5da5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import/source-owner/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"deleted by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/import/source-owner/delete/",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"import",
+								"source-owner",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "region-info",
+			"item": [
+				{
+					"name": "region-info/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"IND\",\n        \"remark\": \"IND location\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/region-info/create",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/find-one",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"id\": \"646704e87b2535953d6cd47c\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dl-url}}/region-info/find-one",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"find-one"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/region-info/details",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/list-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dl-url}}/region-info/list-items",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"list-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"USA\",\n        \"remark\": \"USA location\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/region-info/update/646704e87b2535953d6cd47c",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"update",
+								"646704e87b2535953d6cd47c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/active-inactive",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"inactive by sanjay\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/region-info/active-inactive/6467366614ce770f5bc89e6a",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"active-inactive",
+								"6467366614ce770f5bc89e6a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "region-info/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"remark\": \"delete by sanjay test\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{dl-url}}/region-info/delete/6465cd0b7e0a26340baba7f9",
+							"host": [
+								"{{dl-url}}"
+							],
+							"path": [
+								"region-info",
+								"delete",
+								"6465cd0b7e0a26340baba7f9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  dl-node-api:
+    container_name: dl-node-api
+    image: dl-node-api
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80"
+    entrypoint: ["npm","start"]
+    env_file:
+      - /root/environments/dev/.env
+    networks:
+      - spring-network
+networks:
+  spring-network:
+    external: true
